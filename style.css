@@ -1,0 +1,335 @@
+*{
+  margin: 0%;
+  padding: 0px;
+    font-family: "Baskervville SC", serif;
+}
+
+/* nav section  */
+nav {
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #212121;
+  height: 60px;
+  position: sticky;
+}
+
+
+nav .logo{
+  position: relative;
+  font-weight: 700;
+  color: white;
+  text-shadow: 4px white;
+  text-decoration: none;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.6s;
+}
+
+
+nav ul {
+  display: flex;
+}
+
+nav ul li a {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
+  color: white;
+  text-decoration: none;
+  font-size: large;
+  padding-top: 15px;
+}
+
+nav ul li a:hover {
+  color: blue;
+}
+
+/* about section  */
+
+.intro {
+  width: 550px;
+}
+
+.content {
+  padding-top: 40px;
+  padding-bottom: 10px;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.intro h2 {
+  text-align: center;
+  font-family: 'Sofia';
+  font-size: 31.68px;
+  font-weight: 600;
+  line-height: 41.184px;
+  text-align: left;
+  word-spacing: 0px;
+  height: 41.175px;
+  margin: 26px 0 26px 0;
+}
+
+.intro p {
+  font-size: large;
+  text-align: justify;
+  padding-bottom: 10px;
+  font-family: 'Cambria, Cochin, Georgia, Times, Times New Roman, serif';
+}
+
+
+.image {
+  display: flex;
+}
+
+.image img {
+  width: 300px;
+  height: 300px;
+  cursor: pointer;
+  border-radius: 15px;
+  background-size: cover;
+  transition: all 1.1s;
+}
+
+.image img:hover {
+  transform: scale(1.2);
+} 
+
+/* Destination */
+#Destination {
+
+  
+  background-size: 1920px 1000px;
+
+}
+#Destination h1{
+color: black;
+}
+.card{
+  box-shadow: 8px 8px 15px;
+  transition: all .4s;
+}
+.card:hover{
+  transform: translateY(-20px)
+}
+
+/*Packages*/
+
+.Packages{
+  padding:100px 0;
+  background: #efefef;
+}
+
+.gallery-box img{
+  width:100%;
+  border-radius:16px;
+  cursor:pointer;
+  transition:1s;
+}
+.gallery-box img:hover{
+  transform:scale(1.1);
+}
+
+.gallery-box h4{
+  display:block;
+  color:#fff;
+  text-shadow:-2px 2px 2px #000;
+  font-weight:600%;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+}
+
+.gallery-box{
+  position:relative;
+  margin-bottom:30px;
+}
+
+
+form{
+  margin: 20px;
+  padding: 0px 420px;
+}
+
+h3{
+  text-decoration: underline;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+td{
+  padding-bottom: 20px;
+}
+
+label{
+  display: inline-block;
+  width: 130px;
+}
+button{
+  text-align: center;
+  display: inline-block;
+  width: 100px;
+  height: 30px;
+  font-size: medium;
+  color: white;
+  background-color: black;
+}
+
+
+@media screen and (max-width: 600px) {
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+  }
+
+
+
+  /* Header section  */
+  #Home {
+      background-image: url('./Images/banner-mobile.jpg');
+      height: 300px;
+  }
+
+  #Home h1 {
+      font-size: 30px;
+  }
+
+  #Home h4 {
+      font-size: 16px;
+  }
+
+  /* About section  */
+  .content {
+      flex-direction: column;
+      padding: 20px;
+      margin-top: 210px;
+      text-align: center;
+  }
+
+  .content p {
+      margin-top: 50px;
+  }
+
+  .intro {
+      width: 100%;
+  }
+
+  .image {
+      margin-top: 20px;
+  }
+
+  .image img {
+      width: 100%;
+      height: auto;
+  }
+
+  /* Destination section  */
+  #Destination .row {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  #Destination .col-3 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  #Destination .card {
+    width: 100%;
+    height: auto;
+  }
+
+  #Destination .card img {
+    width: 100%;
+    height: auto;
+  }
+
+  #Destination .card-body {
+    padding: 15px;
+  }
+
+  #Destination .card-title {
+    text-align: center;
+  }
+
+  #Destination .card-text {
+    text-align: justify;
+  }
+
+
+
+
+/*contact us*/
+  form {
+    margin: 10px;
+    padding: 0px 20px; 
+}
+
+label {
+    width: 100%; 
+    margin-bottom: 10px; 
+}
+
+td {
+    padding-bottom: 10px; 
+}
+
+button {
+    width: 100%; 
+    height: 40px; 
+    font-size: large; 
+}
+
+
+/*footer*/
+
+footer .row {
+  flex-direction: column;
+  padding: 10px;
+}
+
+footer .col-2, 
+footer .col-3, 
+footer .col {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+footer h5, 
+footer h4 {
+  text-align: center;
+}
+
+footer .d-flex {
+  justify-content: center;
+}
+
+footer .col-2 ul, 
+footer .col-3 ul, 
+footer .col ul {
+  text-align: center;
+  padding: 0;
+}
+
+footer .col ul li {
+  margin-bottom: 10px;
+}
+
+footer .col i {
+  margin: 0 10px;
+  font-size: 20px;
+}
+
+footer .col {
+  text-align: center;
+}
+}
+
